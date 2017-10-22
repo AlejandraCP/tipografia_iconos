@@ -1,33 +1,65 @@
+div {
+  width: 150px;
+  height: 240px;
+  background-color: #F2F2F2;
+  text-align: center;
+  /*box-sizing: border-box;*/
+  padding: 2px;
+  /*align-items: center;*/
+  border: 9px solid #F2F2F2;
+  color: #6E6E6E;
+  float: left;
+  margin: 2px;
+}
 h2{
   font-family: 'Noto Sans', sans-serif;
-
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 900;
+  position: relative;
+  top: 10px;
 }
 
-.sub-title {
+.paragraph {
   font-family: 'Khula', sans-serif;
-}
-
-
-.description {
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
-div{
-  height: 300px;
-  width: 220px;
-  background-color:red;
-  margin: 10px;
-  padding:5px;
-  float: left;
-}
-p {
-width: 200px;
-height: 280px;
-
-}
-p, h2 {
+  /*padding: 3px auto;*/
+  width: 130px;
+  height: 200px;
+  font-size: 12px;
+  overflow: inherit;
   text-align: center;
+  position: relative;
+  bottom: 8px;
+  left: 10px;
+
 }
-span{
+span {
+  line-height: 15px;
   display: block;
+  position: relative;
+  top: 12px;
+  font-style: italic;
+}
+.icons {
+  transform: scale(2);
+}
+.icon-paperplane, .icon-diamond, .icon-heart, .icon-coffee, .icon-food {
+  color: #6E6E6E;
+  padding: 5px auto;
+  display: block;
+  position: relative;
+  top: 13px;
+}
+div:hover {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #A9D0F5;
+  transform: scale(1.05);
+}
+div:hover .icons{
+  color: #A9D0F5;
+}
+
+div:hover .subtitle{
+  color: #6E6E6E;
 }
